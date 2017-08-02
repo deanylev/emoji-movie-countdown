@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emoji Movie Countdown</title>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+  <style>
+    body {
+      font-family: 'Oxygen';
+      overflow: hidden;
+      background-color: #ffde7a;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      width: 450px;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    #countdown {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      margin-top: 260px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png">
+  <div id="countdown"></div>
+  <script>
+    $('#countdown').countdown('2017/09/14', function(event) {
+
+      $(this).html(event.strftime('<h1>Will Launch In Australia In:</h1><h3>%D Days<br>%H Hours<br>%M Minutes<br>%S Seconds</h3>'));
+
+    });
+  </script>
+</body>
+</html>
