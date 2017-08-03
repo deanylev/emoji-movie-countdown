@@ -9,17 +9,33 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link rel="stylesheet" href="assets/main.css?v=13">
+  <link rel="stylesheet" href="assets/main.css?v=14">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="assets/main.js?v=13"></script>
+  <script src="assets/main.js?v=14"></script>
 </head>
 <body>
   <div class="container">
     <img src="assets/logo.png" class="img-responsive center-block" alt="Emoji Movie Logo">
   </div>
-  <div class="text-center" id="countdown"></div>
+  <div class="text-center">
+    <h1>Will Launch In Australia In:</h1>
+    <div id="countdown-full" class="countdown"></div>
+    <div id="countdown-hours" class="countdown"></div>
+    <div id="countdown-minutes" class="countdown"></div>
+    <div id="countdown-seconds" class="countdown"></div>
+  </div>
+  <div class="text-center unit-chooser">
+    <input type="radio" name="unit" id="full" checked>
+    <label>Full Count</label>
+    <input type="radio" name="unit" id="hours">
+    <label>Hours Only</label>
+    <input type="radio" name="unit" id="minutes">
+    <label>Minutes Only</label>
+    <input type="radio" name="unit" id="seconds">
+    <label>Seconds Only</label>
+  </div>
   <footer>
     <p class="text-center">
       Copyright &copy; 2017

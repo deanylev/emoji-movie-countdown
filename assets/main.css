@@ -19,3 +19,11 @@ img {
   margin-top: 10px;
   width: 550px;
 }
+
+.unit-chooser {
+  margin-top: 20px;
+}
+
+#countdown-hours, #countdown-minutes, #countdown-seconds {
+  display: none;
+}
