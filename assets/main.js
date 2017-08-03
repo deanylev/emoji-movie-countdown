@@ -8,15 +8,14 @@ $(document).ready(function() {
 
     var i = Math.floor(emojis.length * Math.random());
 
-    $(this).html(event.strftime('<h3>%D Day%!D<br>%H Hour%!H<br>%M Minute%!M<br>%S Second%!S</h3><h2>' + emojis[i] + '</h2>'));
+    $(this).html(event.strftime('<h3>%D Day%!D<br>%H Hour%!H<br>%M Minute%!M<br>%S Second%!S</h3>'));
+    $('#emoji').text(emojis[i]);
 
   });
 
   $('#countdown-hours').countdown(date, function(event) {
 
-    var i = Math.floor(emojis.length * Math.random());
-
-    $(this).html(event.strftime('<h3>%I Hour%!I</h3><h2>' + emojis[i] + '</h2>'));
+    $(this).html(event.strftime('<h3>%I Hour%!I</h3>'));
 
   });
 
@@ -24,7 +23,7 @@ $(document).ready(function() {
 
     var i = Math.floor(emojis.length * Math.random());
 
-    $(this).html(event.strftime('<h3>%N Minute%!N</h3><h2>' + emojis[i] + '</h2>'));
+    $(this).html(event.strftime('<h3>%N Minute%!N</h3>'));
 
   });
 
@@ -32,7 +31,7 @@ $(document).ready(function() {
 
     var i = Math.floor(emojis.length * Math.random());
 
-    $(this).html(event.strftime('<h3>%T Second%!T</h3><h2>' + emojis[i] + '</h2>'));
+    $(this).html(event.strftime('<h3>%T Second%!T</h3>'));
 
   });
 
