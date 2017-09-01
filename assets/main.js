@@ -21,15 +21,11 @@ $(document).ready(function() {
 
   $('#countdown-minutes').countdown(date, function(event) {
 
-    var i = Math.floor(emojis.length * Math.random());
-
     $(this).html(event.strftime('<h3>%N Minute%!N</h3>'));
 
   });
 
   $('#countdown-seconds').countdown(date, function(event) {
-
-    var i = Math.floor(emojis.length * Math.random());
 
     $(this).html(event.strftime('<h3>%T Second%!T</h3>'));
 
